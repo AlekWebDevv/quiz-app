@@ -6,3 +6,114 @@
   * https://github.com/andreacardybailey/responsive_example/blob/master/styles/responsive-base.css 
   *
 */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  margin: 0;
+  background-color: #262626;
+}
+
+header {
+  padding: 55px 0 0 0;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+}
+
+.question-and-score {
+  font-size: 20px;
+  font-weight: 600px;
+  color:white;
+  text-align: center;
+  list-style: none;
+}
+
+button {
+  margin-top:10px;
+  height: auto;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  color:rgb(252, 252, 252);
+  background: rgb(58, 120, 255);
+  border: 0;
+  cursor: pointer;
+  margin-bottom: 0;
+  border-radius:3px;
+  padding: 10px 20px;
+}
+
+.start-screen, fieldset {
+  width:80%;
+  padding: 30px;
+  margin: 55px auto 0 auto;
+  background:rgb(243, 243, 243);
+  border-radius: 7px;
+}
+
+legend {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.question-form .question {
+  margin-bottom: 20px;
+  padding: 0 2%;
+  font-size: 20px;
+  font-weight: 600px;
+}
+
+.options ul {
+  list-style: none;
+  margin:0;
+  text-align:left;
+}
+
+label {
+  font-size:18px;
+}
+
+.options span {
+  display:block;
+  border-radius:5px;
+}
+
+.right-answer {
+ background:rgb(255, 255, 255)55, 255, 255);
+ padding: 10px 20px;
+ margin: 5px 20px;
+ border:5px solid rgb(116, 243, 32);
+ border-radius: 12px;
+}
+
+.wrong-answer {
+  background:rgb(255, 255, 255);
+  padding: 15px 10px;
+  margin: 5px 20px;
+  border:5px solid #ff0000;
+  border-radius: 12px;
+  font-size: 17px;
+}
+
+.question-form button {
+  float:right;
+}
+
+button:hover:enabled,
+button:focus:enabled{
+  background-color: #f55353;
+  transition-delay: 38.0ms;
+}
+
+
+/* Disables "Next" button until an answer is clicked */
+#next-question-btn {
+  display: none;
+}
